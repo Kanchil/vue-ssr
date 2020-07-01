@@ -1056,6 +1056,11 @@ ansi-align@^3.0.0:
   dependencies:
     string-width "^3.0.0"
 
+ansi-html@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.npm.taobao.org/ansi-html/download/ansi-html-0.0.7.tgz#813584021962a9e9e6fd039f940d12f56ca7859e"
+  integrity sha1-gTWEAhliqenm/QOflA0S9WynhZ4=
+
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/ansi-regex/download/ansi-regex-2.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fansi-regex%2Fdownload%2Fansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
@@ -2648,6 +2653,11 @@ homedir-polyfill@^1.0.1:
   dependencies:
     parse-passwd "^1.0.0"
 
+html-entities@^1.2.0:
+  version "1.3.1"
+  resolved "https://registry.npm.taobao.org/html-entities/download/html-entities-1.3.1.tgz?cache=0&sync_timestamp=1586616304085&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhtml-entities%2Fdownload%2Fhtml-entities-1.3.1.tgz#fb9a1a4b5b14c5daba82d3e34c6ae4fe701a0e44"
+  integrity sha1-+5oaS1sUxdq6gtPjTGrk/nAaDkQ=
+
 http-assert@^1.3.0:
   version "1.4.1"
   resolved "https://registry.npm.taobao.org/http-assert/download/http-assert-1.4.1.tgz#c5f725d677aa7e873ef736199b89686cceb37878"
@@ -3185,6 +3195,20 @@ koa-static@^5.0.0:
     debug "^3.1.0"
     koa-send "^5.0.0"
 
+koa-webpack-dev-middleware@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/koa-webpack-dev-middleware/download/koa-webpack-dev-middleware-2.0.2.tgz#bab6207198beb6344a0688bf9bd15cfaafa89d91"
+  integrity sha1-urYgcZi+tjRKBoi/m9Fc+q+onZE=
+  dependencies:
+    webpack-dev-middleware "^1.10.0"
+
+koa-webpack-hot-middleware@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/koa-webpack-hot-middleware/download/koa-webpack-hot-middleware-1.0.3.tgz#df6aafbf2d77153101e37e6a4ae70235b466f8c0"
+  integrity sha1-32qvvy13FTEB435qSucCNbRm+MA=
+  dependencies:
+    webpack-hot-middleware "2.x"
+
 koa@^2.13.0:
   version "2.13.0"
   resolved "https://registry.npm.taobao.org/koa/download/koa-2.13.0.tgz#25217e05efd3358a7e5ddec00f0a380c9b71b501"
@@ -3367,7 +3391,7 @@ media-typer@0.3.0:
   resolved "https://registry.npm.taobao.org/media-typer/download/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
-memory-fs@^0.4.1:
+memory-fs@^0.4.1, memory-fs@~0.4.1:
   version "0.4.1"
   resolved "https://registry.npm.taobao.org/memory-fs/download/memory-fs-0.4.1.tgz#3a9a20b8462523e447cfbc7e8bb80ed667bfc552"
   integrity sha1-OpoguEYlI+RHz7x+i7gO1me/xVI=
@@ -3377,7 +3401,7 @@ memory-fs@^0.4.1:
 
 memory-fs@^0.5.0:
   version "0.5.0"
-  resolved "https://registry.npm.taobao.org/memory-fs/download/memory-fs-0.5.0.tgz#324c01288b88652966d161db77838720845a8e3c"
+  resolved "https://registry.npm.taobao.org/memory-fs/download/memory-fs-0.5.0.tgz?cache=0&sync_timestamp=1570537475781&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmemory-fs%2Fdownload%2Fmemory-fs-0.5.0.tgz#324c01288b88652966d161db77838720845a8e3c"
   integrity sha1-MkwBKIuIZSlm0WHbd4OHIIRajjw=
   dependencies:
     errno "^0.1.3"
@@ -3433,6 +3457,11 @@ mime-types@^2.1.18, mime-types@^2.1.26, mime-types@~2.1.24:
   integrity sha1-R5SfmOJ56lMRn1ci4PNOUpvsAJ8=
   dependencies:
     mime-db "1.44.0"
+
+mime@^1.5.0:
+  version "1.6.0"
+  resolved "https://registry.npm.taobao.org/mime/download/mime-1.6.0.tgz?cache=0&sync_timestamp=1590596706367&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmime%2Fdownload%2Fmime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
+  integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
 mimic-response@^1.0.0, mimic-response@^1.0.1:
   version "1.0.1"
@@ -4095,7 +4124,7 @@ querystring-es3@^0.2.0:
   resolved "https://registry.npm.taobao.org/querystring-es3/download/querystring-es3-0.2.1.tgz#9ec61f79049875707d69414596fd907a4d711e73"
   integrity sha1-nsYfeQSYdXB9aUFFlv2Qek1xHnM=
 
-querystring@0.2.0:
+querystring@0.2.0, querystring@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npm.taobao.org/querystring/download/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
   integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
@@ -4114,6 +4143,11 @@ randomfill@^1.0.3:
   dependencies:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
+
+range-parser@^1.0.3:
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/range-parser/download/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
+  integrity sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE=
 
 rc@^1.2.8:
   version "1.2.8"
@@ -4799,6 +4833,11 @@ through2@^2.0.0:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
 
+time-stamp@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.npm.taobao.org/time-stamp/download/time-stamp-2.2.0.tgz#917e0a66905688790ec7bbbde04046259af83f57"
+  integrity sha1-kX4KZpBWiHkOx7u94EBGJZr4P1c=
+
 timers-browserify@^2.0.4:
   version "2.0.11"
   resolved "https://registry.npm.taobao.org/timers-browserify/download/timers-browserify-2.0.11.tgz#800b1f3eee272e5bc53ee465a04d0e804c31211f"
@@ -5195,6 +5234,27 @@ webpack-cli@^3.3.12:
     supports-color "^6.1.0"
     v8-compile-cache "^2.1.1"
     yargs "^13.3.2"
+
+webpack-dev-middleware@^1.10.0:
+  version "1.12.2"
+  resolved "https://registry.npm.taobao.org/webpack-dev-middleware/download/webpack-dev-middleware-1.12.2.tgz#f8fc1120ce3b4fc5680ceecb43d777966b21105e"
+  integrity sha1-+PwRIM47T8VoDO7LQ9d3lmshEF4=
+  dependencies:
+    memory-fs "~0.4.1"
+    mime "^1.5.0"
+    path-is-absolute "^1.0.0"
+    range-parser "^1.0.3"
+    time-stamp "^2.0.0"
+
+webpack-hot-middleware@2.x, webpack-hot-middleware@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.npm.taobao.org/webpack-hot-middleware/download/webpack-hot-middleware-2.25.0.tgz#4528a0a63ec37f8f8ef565cf9e534d57d09fe706"
+  integrity sha1-RSigpj7Df4+O9WXPnlNNV9Cf5wY=
+  dependencies:
+    ansi-html "0.0.7"
+    html-entities "^1.2.0"
+    querystring "^0.2.0"
+    strip-ansi "^3.0.0"
 
 webpack-merge@^4.2.2:
   version "4.2.2"

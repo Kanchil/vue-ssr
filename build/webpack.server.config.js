@@ -10,12 +10,16 @@ let plugins = [
   // 这是将服务器的整个输出
   // 构建为单个 JSON 文件的插件。
   // 默认文件名为 `vue-ssr-server-bundle.json`
-  new VueSSRServerPlugin(),
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': isDev ? '"development"' : '"production"',
     'process.env.VUE_ENV': '"server"'
   })
 ]
+if(isDev) {
+  plugins = plugins.concat([
+    new VueSSRServerPlugin()
+  ])
+}
 if(!isDev) {
   plugins = plugins.concat([
     new MiniCssExtractPlugin({
@@ -28,6 +32,7 @@ module.exports = merge(baseConfig, {
   target: 'node',
   output: {
     // 此处告知 server bundle 使用 Node 风格导出模块(Node-style exports)
+    filename: 'server-entry.js',
     libraryTarget: 'commonjs2'
   },
   externals: nodeExternals({

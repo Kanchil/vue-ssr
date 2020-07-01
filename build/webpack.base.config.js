@@ -4,8 +4,10 @@ const vueLoaderConfig = require('./vue-loader.config')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const isDev = process.env.NODE_ENV === 'development'
 module.exports = {
-  mode: 'production',
-  entry: './src/client-entry.js',
+  mode: isDev ? 'development' : 'production',
+  devtool: isDev
+    ? '#cheap-module-source-map'
+    : false,
   output: {
     publicPath: '/public/',
     path: path.join(__dirname, '..', '/dist'),
